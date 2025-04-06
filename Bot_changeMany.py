@@ -1,5 +1,4 @@
 import telebot
-
 from config import TOKEN, keys
 from extensions import ConvertionException, CurrencyConverter
 
@@ -9,7 +8,7 @@ bot = telebot.TeleBot(TOKEN)
 # определяем команды для взаимодействия с ботом
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
-    text = "Чтобы начать работу введите команду боту: \n <имя валюты><в какую валюту перевести \
+    text = "Чтобы начать работу введите команду боту: \n <имя базовой валюты><в какую валюту перевести> \
     <количество валюты >\n Названия валют необходимо вводить как в списке.\nСписок всех доступных валют: /values"
     bot.reply_to(message, text)
 

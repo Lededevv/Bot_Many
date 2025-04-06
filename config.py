@@ -1,7 +1,8 @@
+# токен телеграмм-бота
 TOKEN = "7606051217:AAGOmxLqD_2iPMBFtYcRHjQNVapsfFAKXqA"
 
 
-
+# словарь с доступными парами для расчета
 keys = {
     "доллар": "USD",
     "евро": "EUR",
